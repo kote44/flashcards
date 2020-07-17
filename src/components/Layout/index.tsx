@@ -16,10 +16,13 @@ type Props = {
 const styles = {
   container: {
     margin: `0 auto`,
-    maxHeight: 825,
+    height: 825,
     display: `flex`,
     flexDirection: `row`,
   } as React.CSSProperties,
+  content: {
+    padding: "1.45rem",
+  },
 }
 
 const Layout = ({ children }: Props) => {
@@ -38,7 +41,7 @@ const Layout = ({ children }: Props) => {
       <Header siteTitle={data.site.siteMetadata.title} />
       <div style={styles.container}>
         <Sidebar />
-        <main>{children}</main>
+        <main style={styles.content}>{children}</main>
       </div>
       <footer>
         © {new Date().getFullYear()}, Built by <b>@kote44</b>

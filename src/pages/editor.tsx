@@ -2,6 +2,7 @@
 import React from "react"
 
 // Components
+import EditorComponent from "../components/Editor"
 import Layout from "../components/Layout"
 
 type DataProps = {
@@ -12,7 +13,7 @@ type DataProps = {
 
 const Editor: React.FC = () => (
   <Layout>
-    <h1>Editor will be here</h1>
+    <EditorComponent />
   </Layout>
 )
 

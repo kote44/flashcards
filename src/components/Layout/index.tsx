@@ -22,6 +22,7 @@ const styles = {
   } as React.CSSProperties,
   content: {
     padding: "1.45rem",
+    width: "100%",
   },
 }
 
